@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Lexend } from 'next/font/google';
+import Card from "@/components/Card"
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -25,96 +26,45 @@ export default function Home() {
       </div>
       <div className="bg-white flex-grow grid grid-cols-2">
         <div className="bg-teal-300 grid grid-cols-3">
-          <Link href={"/build-1"} className="bg-blue-100 hover:border-pink-500 hover:border-2 hover:underline">
-            <div className="relative h-2/3 bg-black">
-              <Image 
-                src= "/slayer-cropped.png"
-                alt= "A picture of the Slayer Ascendancy"
-                layout="fill"
-                objectFit="cover"
-              />
+          
+          <Card
+            href="/build-2"
+            imageSrc="/deadeye-cropped.png"
+            altText="A picture of the Deadeye Ascendancy"
+            title="Svalinn Splitting Steel Deadeye"
+          />
+          <Card
+            href="/build-1"
+            imageSrc="/slayer-cropped.png"
+            altText="A picture of the Slayer Ascendancy"
+            title="Frost Blades of Katabasis Slayer"
+          />
+          <Card
+            href="/build-2"
+            imageSrc="/deadeye-cropped.png"
+            altText="A picture of the Deadeye Ascendancy"
+            title="Svalinn Splitting Steel Deadeye"
+          />
+          <Card
+            href="/build-1"
+            imageSrc="/slayer-cropped.png"
+            altText="A picture of the Slayer Ascendancy"
+            title="Frost Blades of Katabasis Slayer"
+          />
+          <Card
+            href="/build-2"
+            imageSrc="/deadeye-cropped.png"
+            altText="A picture of the Deadeye Ascendancy"
+            title="Svalinn Splitting Steel Deadeye"
+          />
+          <Card
+            href="/build-1"
+            imageSrc="/slayer-cropped.png"
+            altText="A picture of the Slayer Ascendancy"
+            title="Frost Blades of Katabasis Slayer"
+          />
 
-            </div>
-            <div className="h-1/3 bg-black">
-              <h2 className="font-bold text-white text-center"> Frost Blades of Katabasis Slayer</h2>
-
-            </div>
-          </Link>
-          <Link href={"/build-1"} className="bg-blue-100 hover:border-pink-500 hover:border-4">
-            <div className="relative h-2/3 bg-black">
-              <Image 
-                src= "/slayer-cropped.png"
-                alt= "A picture of the Slayer Ascendancy"
-                layout="fill"
-                objectFit="cover"
-              />
-
-            </div>
-            <div className="h-1/3 bg-white">
-              <h2 className="font-bold text-black text-center"> Frost Blades of Katabasis Slayer</h2>
-
-            </div>
-          </Link>
-          <Link href={"/build-1"} className="bg-blue-100 hover:border-pink-500 hover:border-4">
-            <div className="relative h-2/3 bg-black">
-              <Image 
-                src= "/slayer-cropped.png"
-                alt= "A picture of the Slayer Ascendancy"
-                layout="fill"
-                objectFit="cover"
-              />
-
-            </div>
-            <div className="h-1/3 bg-white">
-              <h2 className="font-bold text-black text-center"> Frost Blades of Katabasis Slayer</h2>
-
-            </div>
-          </Link>
-          <Link href={"/build-1"} className="bg-blue-100 hover:border-pink-500 hover:border-4">
-            <div className="relative h-2/3 bg-black">
-              <Image 
-                src= "/slayer-cropped.png"
-                alt= "A picture of the Slayer Ascendancy"
-                layout="fill"
-                objectFit="cover"
-              />
-
-            </div>
-            <div className="h-1/3 bg-white">
-              <h2 className="font-bold text-black text-center"> Frost Blades of Katabasis Slayer</h2>
-
-            </div>
-          </Link>
-          <Link href={"/build-1"} className="bg-blue-100 hover:border-pink-500 hover:border-4">
-            <div className="relative h-2/3 bg-black">
-              <Image 
-                src= "/slayer-cropped.png"
-                alt= "A picture of the Slayer Ascendancy"
-                layout="fill"
-                objectFit="cover"
-              />
-
-            </div>
-            <div className="h-1/3 bg-white">
-              <h2 className="font-bold text-black text-center"> Frost Blades of Katabasis Slayer</h2>
-
-            </div>
-          </Link>
-          <Link href={"/build-1"} className="bg-blue-100 hover:border-pink-500 hover:border-4">
-            <div className="relative h-2/3 bg-black">
-              <Image 
-                src= "/slayer-cropped.png"
-                alt= "A picture of the Slayer Ascendancy"
-                layout="fill"
-                objectFit="cover"
-              />
-
-            </div>
-            <div className="h-1/3 bg-white">
-              <h2 className="font-bold text-black text-center"> Frost Blades of Katabasis Slayer</h2>
-
-            </div>
-          </Link>
+          
 
 
         </div>
