@@ -10,17 +10,37 @@ const lexend = Lexend({
 
 export default function Home() {
   return (
-    // Currently want increased hovering functionality (Text changing size, maybe with a nice animation to boot?)
-    <div className="bg-purple-400 w-full h-12 grid-cols-3 justify-center grid">
-      <Link href={"/builds"} className="bg-red-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110">
-        3.25 Builds
-      </Link>
-      <Link href={"/random"} className="bg-blue-400 text-white text-center py-2 px-4 roundedinline-block hover:filter hover:brightness-110">
-        Random Build
-      </Link>
-      <Link href={"/about"} className="bg-green-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 {lexend.className}">
-        About Me
-      </Link>
+    // Not really liking hover:bold but I don't know of a better way to handle this.
+    <div className="flex flex-col min-h-screen">
+      <div className="bg-purple-400 w-full h-15 grid-cols-3 justify-center grid space-x-4">
+        <Link href={"/builds"} className="bg-red-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline">
+          3.25 Builds
+        </Link>
+        <Link href={"/random"} className="bg-blue-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline">
+          Random Build
+        </Link>
+        <Link href={"/about"} className="bg-green-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline">
+          About Me
+        </Link>
+      </div>
+      <div className="bg-white flex-grow grid grid-cols-2">
+        <div className="bg-teal-300 grid grid-cols-3">
+          <div className="bg-black rounded">
+
+          </div>
+          <div className="bg-blue-900 rounded border-4 border-gray-400 p-4 hover:filter hover:brightness-110">
+
+          </div>
+          <div className="bg-blue-900 rounded">
+
+          </div>
+          <div className="bg-blue-900 rounded">
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
   );
   // return (
