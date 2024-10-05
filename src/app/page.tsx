@@ -18,50 +18,57 @@ export default function Home() {
           3.25 Builds
         </Link>
         <Link href={"/random"} className="bg-blue-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline hover:border-black hover:border-2">
-          Random Build
+          Build Archive
         </Link>
         <Link href={"/about"} className="bg-green-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline hover:border-black hover:border-2">
-          About Me
+          Random Build
         </Link>
       </div>
       <div className="bg-white flex-grow grid grid-cols-2">
-        <div className="bg-teal-300 grid grid-cols-3">
+        <div className="bg-teal-300 grid grid-cols-3 space-x-4 space-y-1">
           
           <Card
             href="/build-2"
             imageSrc="/deadeye-cropped.png"
             altText="A picture of the Deadeye Ascendancy"
             title="Svalinn Splitting Steel Deadeye"
+            description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
+            className="ml-4 mt-1"
           />
           <Card
             href="/build-1"
             imageSrc="/slayer-cropped.png"
             altText="A picture of the Slayer Ascendancy"
             title="Frost Blades of Katabasis Slayer"
+            description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
           />
           <Card
             href="/build-2"
             imageSrc="/deadeye-cropped.png"
             altText="A picture of the Deadeye Ascendancy"
             title="Svalinn Splitting Steel Deadeye"
+            description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
           />
           <Card
             href="/build-1"
             imageSrc="/slayer-cropped.png"
             altText="A picture of the Slayer Ascendancy"
             title="Frost Blades of Katabasis Slayer"
+            description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
           />
           <Card
             href="/build-2"
             imageSrc="/deadeye-cropped.png"
             altText="A picture of the Deadeye Ascendancy"
             title="Svalinn Splitting Steel Deadeye"
+            description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
           />
           <Card
             href="/build-1"
             imageSrc="/slayer-cropped.png"
             altText="A picture of the Slayer Ascendancy"
             title="Frost Blades of Katabasis Slayer"
+            description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
           />
 
           
