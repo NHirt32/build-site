@@ -15,7 +15,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ href, imageSrc, altText, title, description, className, budget, potential }) => {
     return (
-      <Link href={href} className={`bg-blue-100 hover:border-pink-500 rounded hover:border-2 hover:underline ${className}`}>
+      <Link href={href} className={`bg-blue-100 rounded hover:underline ${className}`}>
         <div className="relative h-48 bg-black rounded-t">
           <Image
             src={imageSrc}
