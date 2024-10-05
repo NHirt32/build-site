@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Lexend } from 'next/font/google';
 import Card from "@/components/Card"
 import Header from "@/components/Header"
+import Slider from "@/components/Slider"
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -15,19 +16,8 @@ export default function Home() {
     // Not really liking hover:bold but I don't know of a better way to handle this.
     <div className="flex flex-col min-h-screen">
       <Header/>
-      {/* <div className="bg-purple-400 w-full h-15 grid-cols-3 justify-center grid space-x-4">
-        <Link href={"/builds"} className="bg-red-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline hover:border-black hover:border-2">
-          3.25 Builds
-        </Link>
-        <Link href={"/random"} className="bg-blue-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline hover:border-black hover:border-2">
-          Build Archive
-        </Link>
-        <Link href={"/about"} className="bg-green-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline hover:border-black hover:border-2">
-          Random Build
-        </Link>
-      </div> */}
       <div className="bg-white flex-grow grid grid-cols-2">
-        <div className="bg-teal-300 grid grid-cols-3 space-x-4 space-y-1">
+        <div className="bg-teal-300 grid grid-cols-3 gap-4">
           
           <Card
             href="/build-2"
@@ -35,7 +25,8 @@ export default function Home() {
             altText="A picture of the Deadeye Ascendancy"
             title="Svalinn Splitting Steel Deadeye"
             description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
-            className="ml-4 mt-1"
+            budget={70}
+            potential={100}
           />
           <Card
             href="/build-1"
@@ -43,6 +34,8 @@ export default function Home() {
             altText="A picture of the Slayer Ascendancy"
             title="Frost Blades of Katabasis Slayer"
             description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
+            budget={30}
+            potential={80}
           />
           <Card
             href="/build-2"
@@ -50,6 +43,8 @@ export default function Home() {
             altText="A picture of the Deadeye Ascendancy"
             title="Svalinn Splitting Steel Deadeye"
             description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
+            budget={70}
+            potential={100}
           />
           <Card
             href="/build-1"
@@ -57,6 +52,8 @@ export default function Home() {
             altText="A picture of the Slayer Ascendancy"
             title="Frost Blades of Katabasis Slayer"
             description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
+            budget={30}
+            potential={80}
           />
           <Card
             href="/build-2"
@@ -64,6 +61,8 @@ export default function Home() {
             altText="A picture of the Deadeye Ascendancy"
             title="Svalinn Splitting Steel Deadeye"
             description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
+            budget={70}
+            potential={100}
           />
           <Card
             href="/build-1"
@@ -71,13 +70,41 @@ export default function Home() {
             altText="A picture of the Slayer Ascendancy"
             title="Frost Blades of Katabasis Slayer"
             description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
+            budget={30}
+            potential={80}
+          />
+          <Card
+            href="/build-1"
+            imageSrc="/slayer-cropped.png"
+            altText="A picture of the Slayer Ascendancy"
+            title="Frost Blades of Katabasis Slayer"
+            description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
+            budget={30}
+            potential={80}
+          />
+          <Card
+            href="/build-1"
+            imageSrc="/slayer-cropped.png"
+            altText="A picture of the Slayer Ascendancy"
+            title="Frost Blades of Katabasis Slayer"
+            description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
+            budget={30}
+            potential={80}
+          />
+          <Card
+            href="/build-1"
+            imageSrc="/slayer-cropped.png"
+            altText="A picture of the Slayer Ascendancy"
+            title="Frost Blades of Katabasis Slayer"
+            description= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nisl ac quam eleifend imperdiet et in magna."
+            budget={30}
+            potential={80}
           />
 
           
 
 
         </div>
-
       </div>
     </div>
   );

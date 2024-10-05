@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Slider from '@/components/Slider'
 
 interface CardProps {
     href: string;
@@ -8,12 +9,14 @@ interface CardProps {
     title: string;
     description: string;
     className?: string;
+    budget: number;
+    potential: number;
 }
 
-const Card: React.FC<CardProps> = ({ href, imageSrc, altText, title, description, className }) => {
+const Card: React.FC<CardProps> = ({ href, imageSrc, altText, title, description, className, budget, potential }) => {
     return (
       <Link href={href} className={`bg-blue-100 hover:border-pink-500 rounded hover:border-2 hover:underline ${className}`}>
-        <div className="relative h-2/3 bg-black rounded-t">
+        <div className="relative h-48 bg-black rounded-t">
           <Image
             src={imageSrc}
             alt={altText}
@@ -22,9 +25,13 @@ const Card: React.FC<CardProps> = ({ href, imageSrc, altText, title, description
             className='rounded-t'
           />
         </div>
-        <div className="h-1/3 bg-black rounded-b">
+        <div className="bg-black rounded-b p-4">
           <h2 className="font-bold text-white text-center underline">{title}</h2>
           <p className='text-white text-center'>{description}</p>
+          <div className='grid grid-cols-2 gap-4'>
+            <Slider percentage={budget} title='Budget'/>
+            <Slider percentage={potential} title='Investment Potential'/>
+          </div>
         </div>
       </Link>
     );
