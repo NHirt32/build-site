@@ -1,8 +1,12 @@
 import Card from "@/components/Card"
 
-const CardHolder: React.FC = () => {
+interface CardHolderProps {
+  className?: string;
+}
+
+const CardHolder: React.FC<CardHolderProps> = ({className}) => {
     return (
-        <div className="bg-gray-400 grid grid-cols-2 gap-4 mt-2">
+        <div className={`bg-gray-400 grid gap-4 mt-2 ${className}`}>
           
           <Card
             href="/build-2"
