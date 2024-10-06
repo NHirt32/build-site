@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Lexend } from 'next/font/google';
 import Card from "@/components/Card"
+import Header from "@/components/Header"
+import Slider from "@/components/Slider"
+import CardHolder from "@/components/CardHolder"
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -13,62 +16,9 @@ export default function Home() {
   return (
     // Not really liking hover:bold but I don't know of a better way to handle this.
     <div className="flex flex-col min-h-screen">
-      <div className="bg-purple-400 w-full h-15 grid-cols-3 justify-center grid space-x-4">
-        <Link href={"/builds"} className="bg-red-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline hover:border-black hover:border-2">
-          3.25 Builds
-        </Link>
-        <Link href={"/random"} className="bg-blue-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline hover:border-black hover:border-2">
-          Random Build
-        </Link>
-        <Link href={"/about"} className="bg-green-400 text-white text-center py-2 px-4 rounded inline-block hover:filter hover:brightness-110 hover:font-bold hover:underline hover:border-black hover:border-2">
-          About Me
-        </Link>
-      </div>
-      <div className="bg-white flex-grow grid grid-cols-2">
-        <div className="bg-teal-300 grid grid-cols-3">
-          
-          <Card
-            href="/build-2"
-            imageSrc="/deadeye-cropped.png"
-            altText="A picture of the Deadeye Ascendancy"
-            title="Svalinn Splitting Steel Deadeye"
-          />
-          <Card
-            href="/build-1"
-            imageSrc="/slayer-cropped.png"
-            altText="A picture of the Slayer Ascendancy"
-            title="Frost Blades of Katabasis Slayer"
-          />
-          <Card
-            href="/build-2"
-            imageSrc="/deadeye-cropped.png"
-            altText="A picture of the Deadeye Ascendancy"
-            title="Svalinn Splitting Steel Deadeye"
-          />
-          <Card
-            href="/build-1"
-            imageSrc="/slayer-cropped.png"
-            altText="A picture of the Slayer Ascendancy"
-            title="Frost Blades of Katabasis Slayer"
-          />
-          <Card
-            href="/build-2"
-            imageSrc="/deadeye-cropped.png"
-            altText="A picture of the Deadeye Ascendancy"
-            title="Svalinn Splitting Steel Deadeye"
-          />
-          <Card
-            href="/build-1"
-            imageSrc="/slayer-cropped.png"
-            altText="A picture of the Slayer Ascendancy"
-            title="Frost Blades of Katabasis Slayer"
-          />
-
-          
-
-
-        </div>
-
+      <Header/>
+      <div className="bg-white flex-grow grid grid-cols-2 mt-2">
+        <CardHolder/>
       </div>
     </div>
   );
