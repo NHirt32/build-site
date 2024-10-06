@@ -1,9 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
 import { Lexend } from 'next/font/google';
-import Card from "@/components/Card"
 import Header from "@/components/Header"
-import Slider from "@/components/Slider"
 import CardHolder from "@/components/CardHolder"
 
 const lexend = Lexend({
@@ -14,10 +10,9 @@ const lexend = Lexend({
 
 export default function Home() {
   return (
-    // Not really liking hover:bold but I don't know of a better way to handle this.
     <div className="flex flex-col min-h-screen">
       <Header/>
-      <div className="bg-white flex-grow grid grid-cols-2 mt-2">
+      <div className="bg-gray-400 flex-grow grid grid-cols-2 gap-4 mt-10 px-10">
         <CardHolder/>
       </div>
     </div>

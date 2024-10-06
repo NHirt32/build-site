@@ -2,7 +2,7 @@ import Card from "@/components/Card"
 
 const CardHolder: React.FC = () => {
     return (
-        <div className="bg-teal-300 grid grid-cols-3 gap-4">
+        <div className="bg-gray-400 grid grid-cols-2 gap-4 mt-2">
           
           <Card
             href="/build-2"
