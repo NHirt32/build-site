@@ -1,12 +1,5 @@
-import { Lexend } from 'next/font/google';
 import Header from "@/components/Header"
 import CardHolder from "@/components/CardHolder"
-
-const lexend = Lexend({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
-});
 
 export default function Home() {
   return (
