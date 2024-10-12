@@ -6,7 +6,7 @@ interface CardHolderProps {
 
 const CardHolder: React.FC<CardHolderProps> = ({className}) => {
     return (
-        <div className={`bg-gray-400 grid gap-4 mt-2 ${className}`}>
+        <div className={`grid gap-4 ${className}`}>
           
           <Card
             href="/build-2"

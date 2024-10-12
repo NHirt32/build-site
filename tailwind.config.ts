@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'settler-bg': "url('/settlersofkalguur-bg.jpg')",
+      },
     },
   },
   plugins: [],
