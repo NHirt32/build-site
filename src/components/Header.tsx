@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Header: React.FC = () => {
     return(
-        <div className="w-full h-15 grid grid-cols-[auto_1fr_1fr_1fr] justify-center space-x-4 fixed z-10 bg-black">
+        <div className="w-full h-15 grid grid-cols-[auto_1fr_1fr_1fr] justify-center space-x-4 fixed z-10">
             <Link 
             href={"/"} 
             className="bg-black text-white py-2 px-4 rounded inline-block border-2 border-white hover:filter hover:brightness-110 hover:font-bold hover:underline hover:border-white group">
