@@ -10,11 +10,8 @@ const Slider: React.FC<SliderProps> = ({rating, title, className}) => {
 
     const maxRating = 5
 
-    console.log('Rating in Slider:', rating);
-    console.log('Title in Slider:', title);
-
     return (
-        <div className='border-2 border-white'>
+        <div className='border-2 border-white rounded'>
             <div className={`flex space-x-1 ${className}`}>
                 {[...Array(maxRating)].map((_, index) => (
                     <div key={index}>

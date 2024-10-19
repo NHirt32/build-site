@@ -14,8 +14,6 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ href, imageSrc, altText, title, description, className, budget, potential }) => {
-    console.log('Budget in Card:', budget);
-    console.log('Potential in Card:', potential);
 
     return (
       <Link href={href} className={`bg-blue-100 rounded hover:filter hover:brightness-110 ${className}`}>
