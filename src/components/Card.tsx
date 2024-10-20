@@ -14,6 +14,7 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ href, imageSrc, altText, title, description, className, budget, potential }) => {
+
     return (
       <Link href={href} className={`bg-blue-100 rounded hover:filter hover:brightness-110 ${className}`}>
         <div className="relative h-48 bg-black rounded-t">
@@ -29,8 +30,8 @@ const Card: React.FC<CardProps> = ({ href, imageSrc, altText, title, description
           <h2 className="font-bold text-white text-center underline">{title}</h2>
           <p className='text-white text-center'>{description}</p>
           <div className='grid grid-cols-2 gap-4'>
-            <Slider percentage={budget} title='Budget'/>
-            <Slider percentage={potential} title='Investment Potential'/>
+            <Slider rating={budget} title='Budget'/>
+            <Slider rating={potential} title='Investment Potential'/>
           </div>
         </div>
       </Link>

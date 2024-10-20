@@ -1,16 +1,30 @@
+import Image from 'next/image';
+
 interface SliderProps {
-    percentage: number;
+    rating: number;
     title: string;
     className?: string;
 }
 
-const Slider: React.FC<SliderProps> = ({percentage, title, className}) => {
-    return(
-        <div className={`w-full bg-black rounded border-gray-500 border-2 ${className}`}>
-            <div 
-                className="bg-green-500 h-2 rounded" 
-                style={{ width: `${percentage}%`}}
-            />
+const Slider: React.FC<SliderProps> = ({rating, title, className}) => {
+
+    const maxRating = 5
+
+    return (
+        <div className='border-2 border-white rounded'>
+            <div className={`flex space-x-1 ${className}`}>
+                {[...Array(maxRating)].map((_, index) => (
+                    <div key={index}>
+                        <Image
+                            src="/chaos-orb.webp"
+                            alt={`Rating ${index + 1}`}
+                            width={50}
+                            height={50}
+                            className={`transition duration-300 ${index < rating ? '' : 'filter grayscale'}`}
+                        />
+                    </div>
+                ))}
+            </div>
             <p className="text-white text-center">{title}</p>
         </div>
     );
